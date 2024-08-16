@@ -17,7 +17,7 @@ struct ContentView: View {
                     .clipShape(Circle())
             }
             .padding()
-            .background(Color.red)
+            .background(Color.cabecalho)
             
             VStack(alignment: .leading) {
                 HStack {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22C006272C6FEB0300554235 /* AreaConsultaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C006262C6FEB0300554235 /* AreaConsultaView.swift */; };
 		22C8DE722C66A6C600538059 /* clinicampusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8DE712C66A6C600538059 /* clinicampusApp.swift */; };
 		22C8DE742C66A6C600538059 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8DE732C66A6C600538059 /* ContentView.swift */; };
 		22C8DE762C66A6C600538059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C8DE752C66A6C600538059 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		2279FDFC2C6FCBC000F8F181 /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
+		22C006262C6FEB0300554235 /* AreaConsultaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaConsultaView.swift; sourceTree = "<group>"; };
 		22C8DE6E2C66A6C600538059 /* clinicampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clinicampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C8DE712C66A6C600538059 /* clinicampusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clinicampusApp.swift; sourceTree = "<group>"; };
 		22C8DE732C66A6C600538059 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,12 +62,8 @@
 		22C8DE702C66A6C600538059 /* clinicampus */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				22C8DE812C66AA2000538059 /* DirecionamentoView.swift */,
-=======
 				2279FDFC2C6FCBC000F8F181 /* .gitignore.md */,
-				22C8DE812C66AA2000538059 /* ConsultasView.swift */,
->>>>>>> e5b5250f4634cdb55acf3d9b198ff12e55e05153
+				22C8DE812C66AA2000538059 /* DirecionamentoView.swift */,
 				22C8DE7F2C66A9ED00538059 /* MainView.swift */,
 				22C8DE712C66A6C600538059 /* clinicampusApp.swift */,
 				22C8DE732C66A6C600538059 /* ContentView.swift */,
@@ -73,6 +71,7 @@
 				22C8DE772C66A6C600538059 /* Preview Content */,
 				22C8DE832C66AA5B00538059 /* PerfilView.swift */,
 				22C8DE852C66AB3400538059 /* NoticiasVIew.swift */,
+				22C006262C6FEB0300554235 /* AreaConsultaView.swift */,
 			);
 			path = clinicampus;
 			sourceTree = "<group>";
@@ -160,6 +159,7 @@
 				22C8DE862C66AB3400538059 /* NoticiasVIew.swift in Sources */,
 				22C8DE842C66AA5B00538059 /* PerfilView.swift in Sources */,
 				22C8DE802C66A9ED00538059 /* MainView.swift in Sources */,
+				22C006272C6FEB0300554235 /* AreaConsultaView.swift in Sources */,
 				22C8DE722C66A6C600538059 /* clinicampusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
