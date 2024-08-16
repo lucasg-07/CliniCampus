@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2279FDFC2C6FCBC000F8F181 /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
 		22C8DE6E2C66A6C600538059 /* clinicampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clinicampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C8DE712C66A6C600538059 /* clinicampusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clinicampusApp.swift; sourceTree = "<group>"; };
 		22C8DE732C66A6C600538059 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,7 +60,12 @@
 		22C8DE702C66A6C600538059 /* clinicampus */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				22C8DE812C66AA2000538059 /* DirecionamentoView.swift */,
+=======
+				2279FDFC2C6FCBC000F8F181 /* .gitignore.md */,
+				22C8DE812C66AA2000538059 /* ConsultasView.swift */,
+>>>>>>> e5b5250f4634cdb55acf3d9b198ff12e55e05153
 				22C8DE7F2C66A9ED00538059 /* MainView.swift */,
 				22C8DE712C66A6C600538059 /* clinicampusApp.swift */,
 				22C8DE732C66A6C600538059 /* ContentView.swift */,

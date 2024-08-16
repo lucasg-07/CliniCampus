@@ -21,48 +21,56 @@ struct ContentView: View {
             
             VStack(alignment: .leading) {
                 HStack {
-                    VStack {
-                        Image(systemName: "calendar.badge.plus")
-                            .font(.largeTitle)
-                            .foregroundColor(.red)
+                    ScrollView(.horizontal){
+                        HStack {
+                            
+                            VStack{
+                                Image(systemName: "calendar.badge.plus")
+                                    .font(.largeTitle)
+                                    .foregroundColor(.red)
+                                
+                                Text("Agendar consulta")
+                                    .font(.subheadline)
+                                    .foregroundColor(.black)
+                            }
+                            .padding(10)
+                            .padding(.vertical,40)
+                            .background(Color.gray.opacity(0.2))
+                            .cornerRadius(10)
+                          
+                            VStack{
+                                Image(systemName: "list.bullet")
+                                    .font(.largeTitle)
+                                    .foregroundColor(.red)
+                                
+                                    .padding(.bottom,6)
+                                Text("Consultas agendadas")
+                                    .font(.subheadline)
+                                    .foregroundColor(.black)
+                            }
+                            .padding(.horizontal,2)
+                            .padding(.vertical,51)
+                            .background(Color.gray.opacity(0.2))
+                            .cornerRadius(10)
+                            
+                            VStack{
+                                Image(systemName: "doc.text")
+                                    .font(.largeTitle)
+                                    .foregroundColor(.red)
+                                
+                                Text("Histórico de consultas")
+                                    .font(.subheadline)
+                                    .foregroundColor(.black)
+                            }
+                            .padding(.horizontal,2)
+                            .padding(.vertical,51)
+                            .background(Color.gray.opacity(0.2))
+                            .cornerRadius(10)
+                        }
                         
-                        Text("Agendar consulta")
-                            .font(.subheadline)
-                            .foregroundColor(.black)
+                       
                     }
-                    .padding()
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(10)
-                    
-                    VStack {
-                        Image(systemName: "list.bullet")
-                            .font(.largeTitle)
-                            .foregroundColor(.red)
-                        
-                        Text("Consultas agendadas")
-                            .font(.subheadline)
-                            .foregroundColor(.black)
-                    }
-                    .padding()
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(10)
-                }
-                .padding(.top)
-                
-                HStack {
-                    VStack {
-                        Image(systemName: "doc.text")
-                            .font(.largeTitle)
-                            .foregroundColor(.red)
-                        
-                        Text("Histórico de consultas")
-                            .font(.subheadline)
-                            .foregroundColor(.black)
-                    }
-                    .padding()
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(10)
-                }
+            }
                 
                 Spacer().frame(height: 20)
                 
@@ -97,7 +105,7 @@ struct ContentView: View {
                     Text("Campanhas")
                         .font(.headline)
                     
-                    Image("campaign_image")
+                    Image("campanha1")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .cornerRadius(10)
