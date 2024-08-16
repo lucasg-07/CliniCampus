@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2279FDFF2C6FE3B100F8F181 /* AgendamentoHorarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279FDFE2C6FE3A900F8F181 /* AgendamentoHorarioView.swift */; };
 		22C8DE722C66A6C600538059 /* clinicampusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8DE712C66A6C600538059 /* clinicampusApp.swift */; };
 		22C8DE742C66A6C600538059 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8DE732C66A6C600538059 /* ContentView.swift */; };
 		22C8DE762C66A6C600538059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C8DE752C66A6C600538059 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2279FDFE2C6FE3A900F8F181 /* AgendamentoHorarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendamentoHorarioView.swift; sourceTree = "<group>"; };
 		22C8DE6E2C66A6C600538059 /* clinicampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clinicampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C8DE712C66A6C600538059 /* clinicampusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clinicampusApp.swift; sourceTree = "<group>"; };
 		22C8DE732C66A6C600538059 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		22C8DE702C66A6C600538059 /* clinicampus */ = {
 			isa = PBXGroup;
 			children = (
+				2279FDFE2C6FE3A900F8F181 /* AgendamentoHorarioView.swift */,
 				22C8DE812C66AA2000538059 /* ConsultasView.swift */,
 				22C8DE7F2C66A9ED00538059 /* MainView.swift */,
 				22C8DE712C66A6C600538059 /* clinicampusApp.swift */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2279FDFF2C6FE3B100F8F181 /* AgendamentoHorarioView.swift in Sources */,
 				22C8DE742C66A6C600538059 /* ContentView.swift in Sources */,
 				22C8DE822C66AA2000538059 /* ConsultasView.swift in Sources */,
 				22C8DE862C66AB3400538059 /* NoticiasVIew.swift in Sources */,
