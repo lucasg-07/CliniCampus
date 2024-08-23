@@ -8,7 +8,7 @@ struct MainView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }
-            DirecionamentoView()
+            AreaConsultaView()
                 .tabItem {
                     Image(systemName: "doc.text")
                     Text("Consultas")

@@ -10,7 +10,7 @@ import SwiftUI
 struct AreaConsultaView: View {
     var body: some View {
         
-        NavigationStack{
+        NavigationView{
             VStack {
                 HStack
                 {
