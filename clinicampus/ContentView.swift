@@ -94,13 +94,19 @@ struct ContentView: View {
                             
                             Button(action: {
                             }) {
-                                Text("Agendar")
-                                    .foregroundColor(.white)
-                                    .padding(.horizontal)
-                                    .padding(.vertical, 8)
-                                    .background(Color.red)
-                                    .cornerRadius(10)
+                                    Text("Agendar")
+                                    Image(systemName: "plus")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 20, height: 11.5)
                             }
+                            .padding(.horizontal,10)
+                            .padding(.vertical, 8)
+                            .background(Color.red)
+                            .cornerRadius(10)
+                            .foregroundColor(.white)
+
+
                         }
                         .padding()
                         .background(Color.gray.opacity(0.2))

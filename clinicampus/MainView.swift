@@ -6,7 +6,7 @@ struct MainView: View {
             ContentView()
                 .tabItem {
                     Image(systemName: "house")
-                    Text("Home")
+                    Text("Início")
                 }
             AreaConsultaView()
                 .tabItem {
