@@ -44,6 +44,7 @@
 		22C8DE652C66A6C600538059 = {
 			isa = PBXGroup;
 			children = (
+				2279FDFC2C6FCBC000F8F181 /* .gitignore.md */,
 				22C8DE702C66A6C600538059 /* clinicampus */,
 				22C8DE6F2C66A6C600538059 /* Products */,
 			);
@@ -60,7 +61,6 @@
 		22C8DE702C66A6C600538059 /* clinicampus */ = {
 			isa = PBXGroup;
 			children = (
-				2279FDFC2C6FCBC000F8F181 /* .gitignore.md */,
 				22C8DE7F2C66A9ED00538059 /* MainView.swift */,
 				22C8DE712C66A6C600538059 /* clinicampusApp.swift */,
 				22C8DE732C66A6C600538059 /* ContentView.swift */,
