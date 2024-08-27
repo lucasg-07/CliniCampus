@@ -3,7 +3,7 @@
 //  clinicampus
 //
 //  Created by found on 16/08/24.
-//
+
 
 import SwiftUI
 
@@ -12,6 +12,7 @@ struct AgendamentoHorarioView: View {
     @State private var selectedDate = Date()
     @State private var selectedHorario: String?
     @State private var showingDatePicker = false
+    @State private var index = 0
     
     let oftalmologistas: [Oftalmologista] = [
         Oftalmologista(nome: "Dr. Osvaldo Junior", dia: "Qua 03/04", horarios: ["10:00", "13:00", "16:00"]),
@@ -24,7 +25,9 @@ struct AgendamentoHorarioView: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                        showingDatePicker.toggle()
+                        
+                            showingDatePicker.toggle()
+                        
                     }) {
                         HStack {
                             Text("Alterar Datas")
@@ -47,13 +50,19 @@ struct AgendamentoHorarioView: View {
                                 ForEach(oftalmologista.horarios, id: \.self) { horario in
                                     Button(action: {
                                         selectedHorario = horario
+                                        withAnimation(.spring()){
+                                            self.index = 0
+                                        }
                                     }) {
                                         Text(horario)
                                             .padding()
                                             .background(selectedHorario == horario ? Color.blue: Color.red)
-                                            .foregroundColor(.white)
+                                            .foregroundColor(self.index == 0 ? .white : .gray)
                                             .cornerRadius(10)
+                                            .frame(width: (UIScreen.main.bounds.width - 50) / 4)
                                     }
+                                    
+                                   //.animation(.easeInOut, value: selectedHorario)
                                 }
                             }
                             .padding(.vertical)
@@ -77,19 +86,23 @@ struct AgendamentoHorarioView: View {
         }
     }
 }
+
     struct Oftalmologista: Identifiable {
         let id = UUID()
         let nome: String
         let dia: String
         let horarios: [String]
+        
+        
     }
     
     
     
     
-    struct MainView_Previews: PreviewProvider {
+    struct AgendamentoHorarioView_Previews: PreviewProvider {
         static var previews: some View {
             AgendamentoHorarioView()
     }
     
 }
+
