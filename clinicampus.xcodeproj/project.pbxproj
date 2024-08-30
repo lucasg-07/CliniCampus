@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		224A8B962C7E3EA600C40FDA /* ConsultasAgendadas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A8B952C7E3EA600C40FDA /* ConsultasAgendadas.swift */; };
 		2279FDFF2C6FE3B100F8F181 /* AgendamentoHorarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279FDFE2C6FE3A900F8F181 /* AgendamentoHorarioView.swift */; };
+		22908DEB2C823E8A00EF7983 /* HistoricoConsultasEspecifico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22908DEA2C823E8A00EF7983 /* HistoricoConsultasEspecifico.swift */; };
 		22C8DE722C66A6C600538059 /* clinicampusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8DE712C66A6C600538059 /* clinicampusApp.swift */; };
 		22C8DE742C66A6C600538059 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8DE732C66A6C600538059 /* ContentView.swift */; };
 		22C8DE762C66A6C600538059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C8DE752C66A6C600538059 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		224A8B952C7E3EA600C40FDA /* ConsultasAgendadas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultasAgendadas.swift; sourceTree = "<group>"; };
 		2279FDFE2C6FE3A900F8F181 /* AgendamentoHorarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendamentoHorarioView.swift; sourceTree = "<group>"; };
+		22908DEA2C823E8A00EF7983 /* HistoricoConsultasEspecifico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoConsultasEspecifico.swift; sourceTree = "<group>"; };
 		22C8DE6E2C66A6C600538059 /* clinicampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clinicampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C8DE712C66A6C600538059 /* clinicampusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clinicampusApp.swift; sourceTree = "<group>"; };
 		22C8DE732C66A6C600538059 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				2279FDFE2C6FE3A900F8F181 /* AgendamentoHorarioView.swift */,
 				224A8B952C7E3EA600C40FDA /* ConsultasAgendadas.swift */,
+				22908DEA2C823E8A00EF7983 /* HistoricoConsultasEspecifico.swift */,
 				22C8DE812C66AA2000538059 /* ConsultasView.swift */,
 				22C8DE7F2C66A9ED00538059 /* MainView.swift */,
 				22C8DE712C66A6C600538059 /* clinicampusApp.swift */,
@@ -163,6 +166,7 @@
 				22C8DE802C66A9ED00538059 /* MainView.swift in Sources */,
 				22C8DE722C66A6C600538059 /* clinicampusApp.swift in Sources */,
 				224A8B962C7E3EA600C40FDA /* ConsultasAgendadas.swift in Sources */,
+				22908DEB2C823E8A00EF7983 /* HistoricoConsultasEspecifico.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
