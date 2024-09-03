@@ -6,9 +6,9 @@ struct MainView: View {
             ContentView()
                 .tabItem {
                     Image(systemName: "house")
-                    Text("Home")
+                    Text("Início")
                 }
-            ConsultasView()
+            AreaConsultaView()
                 .tabItem {
                     Image(systemName: "doc.text")
                     Text("Consultas")
