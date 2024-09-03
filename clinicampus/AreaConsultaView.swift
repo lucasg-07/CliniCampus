@@ -10,7 +10,7 @@ import SwiftUI
 struct AreaConsultaView: View {
     var body: some View {
         
-        NavigationStack{
+        NavigationView{
             VStack {
                 HStack
                 {
@@ -26,7 +26,7 @@ struct AreaConsultaView: View {
                 
                 
                 
-                    NavigationLink("Avaliação Biomédica", destination: PerfilView())
+                    NavigationLink("Avaliação Biomédica", destination:  AgendamentoHorarioView())
                         .padding(.horizontal,30)
                         .padding()
                         .font(.title)
@@ -36,7 +36,7 @@ struct AreaConsultaView: View {
                         .foregroundStyle(.white)
                     
                     
-                    NavigationLink("Odontologia", destination: PerfilView())
+                    NavigationLink("Odontologia", destination: AgendamentoHorarioView())
                         .padding(.horizontal,80)
                         .padding()
                         .font(.title)
@@ -47,7 +47,7 @@ struct AreaConsultaView: View {
                         .padding()
                     
                     
-                    NavigationLink("Oftalmologia", destination: PerfilView())
+                    NavigationLink("Oftalmologia", destination: AgendamentoHorarioView())
                         .padding(.horizontal,80)
                         .padding()
                         .font(.title)
@@ -59,7 +59,7 @@ struct AreaConsultaView: View {
                     
                     
                     
-                    NavigationLink("Psicologia", destination: PerfilView())
+                    NavigationLink("Psicologia", destination: AgendamentoHorarioView())
                         .padding(.horizontal,100)
                         .padding()
                         .font(.title)
@@ -70,7 +70,7 @@ struct AreaConsultaView: View {
                         .padding()
                     
                     
-                    NavigationLink("Testes Rápidos", destination: PerfilView())
+                    NavigationLink("Testes Rápidos", destination: AgendamentoHorarioView())
                         .padding(.horizontal,70)
                         .padding()
                         .font(.title)
