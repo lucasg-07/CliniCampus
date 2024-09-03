@@ -35,7 +35,7 @@ struct ConfirmacaoView: View {
                 Text("Confirmar")
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(Color.blue)
+                    .background(Color.cabecalho)
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }

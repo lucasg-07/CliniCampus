@@ -30,7 +30,7 @@ struct ContentView: View {
                                     VStack {
                                         Image(systemName: "calendar.badge.plus")
                                             .font(.largeTitle)
-                                            .foregroundColor(.red)
+                                            .foregroundColor(.cabecalho)
                                         
                                         
                                         Text("Agendar consulta")
@@ -47,7 +47,7 @@ struct ContentView: View {
                                     VStack{
                                         Image(systemName: "list.bullet")
                                             .font(.largeTitle)
-                                            .foregroundColor(.red)
+                                            .foregroundColor(.cabecalho)
                                         
                                             .padding(.bottom,6)
                                         Text("Consultas agendadas")
@@ -57,14 +57,14 @@ struct ContentView: View {
                                     .padding(.horizontal,2)
                                     .padding(.vertical,51)
                                     .background(Color.gray.opacity(0.2))
-                                .cornerRadius(10)
+                                    .cornerRadius(10)
                                 }
                                 
                                 NavigationLink(destination:AreaConsultaView()) {
                                     VStack{
                                         Image(systemName: "doc.text")
                                             .font(.largeTitle)
-                                            .foregroundColor(.red)
+                                            .foregroundColor(.cabecalho)
                                         
                                         Text("Histórico de consultas")
                                             .font(.subheadline)
@@ -73,7 +73,7 @@ struct ContentView: View {
                                     .padding(.horizontal,2)
                                     .padding(.vertical,51)
                                     .background(Color.gray.opacity(0.2))
-                                .cornerRadius(10)
+                                    .cornerRadius(10)
                                 }
                             }
                             
@@ -92,27 +92,26 @@ struct ContentView: View {
                             
                             Spacer()
                             
-                            Button(action: {
-                            }) {
-                                    Text("Agendar")
-                                    Image(systemName: "plus")
+                            NavigationLink(destination:AreaConsultaView()){
+                                Text("Agendar")
+                                Image(systemName: "plus")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 20, height: 11.5)
                             }
                             .padding(.horizontal,10)
                             .padding(.vertical, 8)
-                            .background(Color.red)
+                            .background(Color.cabecalho)
                             .cornerRadius(10)
                             .foregroundColor(.white)
-
-
+                            
+                            
                         }
                         .padding()
                         .background(Color.gray.opacity(0.2))
                         .cornerRadius(10)
                     }
-                    
+                
                     Spacer().frame(height: 20)
                     
                     VStack(alignment: .leading) {
