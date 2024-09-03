@@ -9,6 +9,5 @@ import SwiftUI
 struct ConsultasView: View {
     var body: some View {
         Text("Marcar consultas")
-        
     }
 }
