@@ -43,7 +43,7 @@ struct ContentView: View {
                                     .background(Color.gray.opacity(0.2))
                                     .cornerRadius(10)
                                 }
-                                NavigationLink(destination: AreaConsultaView()) {
+                                NavigationLink(destination: ConsultasAgendadas()) {
                                     VStack{
                                         Image(systemName: "list.bullet")
                                             .font(.largeTitle)
@@ -60,7 +60,7 @@ struct ContentView: View {
                                 .cornerRadius(10)
                                 }
                                 
-                                NavigationLink(destination:AreaConsultaView()) {
+                                NavigationLink(destination:HistoricoConsultasView()) {
                                     VStack{
                                         Image(systemName: "doc.text")
                                             .font(.largeTitle)
