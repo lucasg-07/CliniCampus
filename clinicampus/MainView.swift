@@ -2,31 +2,140 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        TabView {
-            ContentView()
-                .tabItem {
-                    Image(systemName: "house")
-                    Text("Início")
+        NavigationView{
+            VStack {
+                HStack {
+                    Text("CliniCampus")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .padding(.top,40)
+                        .padding(.leading)
+                    
+                    Spacer()
+                    
+                    Image("Bia")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .clipShape(Circle())
+                        .padding(.bottom)
+                        .padding(.horizontal,15)
                 }
-            AreaConsultaView()
-                .tabItem {
-                    Image(systemName: "doc.text")
-                    Text("Consultas")
+                .background(Color.cabecalho)
+                
+                VStack(alignment: .leading) {
+                    HStack {
+                        ScrollView(.horizontal){
+                            HStack {
+                                NavigationLink(destination:AreaConsultaView()){
+                                    VStack {
+                                        Image(systemName: "calendar.badge.plus")
+                                            .font(.largeTitle)
+                                            .foregroundColor(.red)
+                                        
+                                        
+                                        Text("Agendar consulta")
+                                            .font(.subheadline)
+                                            .foregroundColor(.black)
+                                    }
+                                    
+                                    .padding(10)
+                                    .padding(.vertical,40)
+                                    .background(Color.gray.opacity(0.2))
+                                    .cornerRadius(10)
+                                }
+                                NavigationLink(destination: AreaConsultaView()) {
+                                    VStack{
+                                        Image(systemName: "list.bullet")
+                                            .font(.largeTitle)
+                                            .foregroundColor(.red)
+                                        
+                                            .padding(.bottom,6)
+                                        Text("Consultas agendadas")
+                                            .font(.subheadline)
+                                            .foregroundColor(.black)
+                                    }
+                                    .padding(.horizontal,2)
+                                    .padding(.vertical,51)
+                                    .background(Color.gray.opacity(0.2))
+                                .cornerRadius(10)
+                                }
+                                
+                                NavigationLink(destination:AreaConsultaView()) {
+                                    VStack{
+                                        Image(systemName: "doc.text")
+                                            .font(.largeTitle)
+                                            .foregroundColor(.red)
+                                        
+                                        Text("Histórico de consultas")
+                                            .font(.subheadline)
+                                            .foregroundColor(.black)
+                                    }
+                                    .padding(.horizontal,2)
+                                    .padding(.vertical,51)
+                                    .background(Color.gray.opacity(0.2))
+                                .cornerRadius(10)
+                                }
+                            }
+                            
+                        }
+                    }
+                    
+                    Spacer().frame(height: 20)
+                    
+                    VStack(alignment: .leading) {
+                        Text("Próximos agendamentos")
+                            .font(.headline)
+                        
+                        HStack {
+                            Text("Sem agendamentos próximos")
+                                .foregroundColor(.gray)
+                            
+                            Spacer()
+                            
+                            Button(action: {
+                            }) {
+                                    Text("Agendar")
+                                    Image(systemName: "plus")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 20, height: 11.5)
+                            }
+                            .padding(.horizontal,10)
+                            .padding(.vertical, 8)
+                            .background(Color.red)
+                            .cornerRadius(10)
+                            .foregroundColor(.white)
+
+
+                        }
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                    }
+                    
+                    Spacer().frame(height: 20)
+                    
+                    VStack(alignment: .leading) {
+                        Text("Campanhas")
+                            .font(.headline)
+                        
+                        Image("campanha1")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .cornerRadius(10)
+                    }
+                    
+                    Spacer()
                 }
-            NoticiasView()
-                .tabItem {
-                    Image(systemName: "megaphone")
-                    Text("Noticias")
-                }
-            PerfilView()
-                .tabItem {
-                    Image(systemName: "person")
-                    Text("Perfil")
-                }
+                .padding()
+                
+            }
         }
     }
 }
 
-#Preview {
-    MainView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
