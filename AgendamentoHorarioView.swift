@@ -35,10 +35,11 @@ struct AgendamentoHorarioView: View {
                 List(oftalmologistas) { oftalmologista in
                     Section(header: Text(oftalmologista.nome)
                         .font(.headline)
-                        .padding(.vertical, 5)) {
+                        .foregroundColor(.black)
+                        .padding(.vertical, 0.5)){
                             Text(oftalmologista.dia)
                                 .font(.subheadline)
-                                .foregroundColor(.gray)
+                                .foregroundColor(.black.opacity(2))
                             
                             HStack {
                                 ForEach(oftalmologista.horarios, id: \.self) { horario in
@@ -51,7 +52,7 @@ struct AgendamentoHorarioView: View {
                                             .padding()
                                             .background(
                                                 selectedHorario == horario && selectedOftalmologista?.id == oftalmologista.id
-                                                ? Color.blue : Color.red
+                                                ? Color.blue : Color.cabecalho
                                             )
                                             .foregroundColor(.white)
                                             .cornerRadius(10)
