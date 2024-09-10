@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+<<<<<<< HEAD
    uuid = "DF8D7F2F-A2A0-48E1-AB3D-3B469EBD30F7"
+=======
+<<<<<<< HEAD
+   uuid = "21696A65-BDC3-4A9E-A2F5-D60B8600A1DC"
+=======
+   uuid = "61535921-1156-4C18-AEA5-0F6FD2AF3FF8"
+>>>>>>> feature/tela-ha
+>>>>>>> feature/merge-branchs
    type = "1"
    version = "2.0">
 </Bucket>
