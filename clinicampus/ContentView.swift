@@ -8,6 +8,7 @@ struct ContentView: View {
                     Image(systemName: "house")
                     Text("Início")
                 }
+            
             AreaConsultaView()
                 .tabItem {
                     Image(systemName: "doc.text")
@@ -26,7 +27,6 @@ struct ContentView: View {
         }
     }
 }
-
 #Preview {
     ContentView()
 }

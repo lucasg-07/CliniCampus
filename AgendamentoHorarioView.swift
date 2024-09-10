@@ -7,6 +7,7 @@ struct AgendamentoHorarioView: View {
     @State private var selectedOftalmologista: Oftalmologista?
     @State private var showingDatePicker = false
     @State private var showingConfirmationPopup = false
+    @State private var navigateToMain = false  // Novo estado para controlar a navegação para a MainView
     
     let oftalmologistas: [Oftalmologista] = [
         Oftalmologista(nome: "Dr. Osvaldo Junior", dia: "Qua 03/04", horarios: ["10:00", "13:00", "16:00"]),
@@ -15,7 +16,7 @@ struct AgendamentoHorarioView: View {
     ]
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 HStack {
                     Spacer()
@@ -30,7 +31,7 @@ struct AgendamentoHorarioView: View {
                     .padding(.trailing)
                 }
                 .padding(.top)
-                
+                     
                 List(oftalmologistas) { oftalmologista in
                     Section(header: Text(oftalmologista.nome)
                         .font(.headline)
@@ -55,7 +56,7 @@ struct AgendamentoHorarioView: View {
                                             .foregroundColor(.white)
                                             .cornerRadius(10)
                                     }
-                                    .buttonStyle(PlainButtonStyle()) 
+                                    .buttonStyle(PlainButtonStyle())
                                 }
                             }
                         }
@@ -71,13 +72,17 @@ struct AgendamentoHorarioView: View {
                 
                 Button("Confirmar") {
                     showingDatePicker = false
+                    
                 }
                 .padding()
             }
             .sheet(isPresented: $showingConfirmationPopup) {
                 if let selectedOftalmologista = selectedOftalmologista, let selectedHorario = selectedHorario {
-                    ConfirmacaoView(oftalmologista: selectedOftalmologista, horario: selectedHorario)
+                    ConfirmacaoView(oftalmologista: selectedOftalmologista, horario: selectedHorario, showingConfirmationPopup: $showingConfirmationPopup, navigateToMain: $navigateToMain)
                 }
+            }
+            .navigationDestination(isPresented: $navigateToMain) {
+                MainView()
             }
         }
     }
@@ -90,8 +95,7 @@ struct Oftalmologista: Identifiable {
     let horarios: [String]
 }
 
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        AgendamentoHorarioView()
-    }
+#Preview{
+    AgendamentoHorarioView()
 }
+

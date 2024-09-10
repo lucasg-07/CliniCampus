@@ -43,7 +43,7 @@ struct MainView: View {
                                     .background(Color.gray.opacity(0.2))
                                     .cornerRadius(10)
                                 }
-                                NavigationLink(destination: AreaConsultaView()) {
+                                NavigationLink(destination: ConsultasAgendadas()) {
                                     VStack{
                                         Image(systemName: "list.bullet")
                                             .font(.largeTitle)
@@ -60,7 +60,7 @@ struct MainView: View {
                                 .cornerRadius(10)
                                 }
                                 
-                                NavigationLink(destination:AreaConsultaView()) {
+                                NavigationLink(destination:HistoricoConsultasView()) {
                                     VStack{
                                         Image(systemName: "doc.text")
                                             .font(.largeTitle)
@@ -92,22 +92,20 @@ struct MainView: View {
                             
                             Spacer()
                             
-                            Button(action: {
-                            }) {
+                            NavigationLink(destination: AreaConsultaView()){
                                     Text("Agendar")
                                     Image(systemName: "plus")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 20, height: 11.5)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 20, height: 11.5)
+                                }
+                                .padding(.horizontal,10)
+                                .padding(.vertical, 8)
+                                .background(Color.red)
+                                .cornerRadius(10)
+                                .foregroundColor(.white)
                             }
-                            .padding(.horizontal,10)
-                            .padding(.vertical, 8)
-                            .background(Color.red)
-                            .cornerRadius(10)
-                            .foregroundColor(.white)
 
-
-                        }
                         .padding()
                         .background(Color.gray.opacity(0.2))
                         .cornerRadius(10)
@@ -134,8 +132,6 @@ struct MainView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    MainView()
 }
