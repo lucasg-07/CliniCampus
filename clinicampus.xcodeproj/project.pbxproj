@@ -18,7 +18,7 @@
 		22C8DE792C66A6C600538059 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C8DE782C66A6C600538059 /* Preview Assets.xcassets */; };
 		22C8DE802C66A9ED00538059 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8DE7F2C66A9ED00538059 /* ContentView.swift */; };
 		22C8DE842C66AA5B00538059 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8DE832C66AA5B00538059 /* PerfilView.swift */; };
-		22C8DE862C66AB3400538059 /* NoticiasVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8DE852C66AB3400538059 /* NoticiasVIew.swift */; };
+		22C8DE862C66AB3400538059 /* NoticiasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8DE852C66AB3400538059 /* NoticiasView.swift */; };
 		22DC0EB22C82378B0070326F /* ConfirmacaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC0EB12C82378B0070326F /* ConfirmacaoView.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 		22C8DE782C66A6C600538059 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		22C8DE7F2C66A9ED00538059 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22C8DE832C66AA5B00538059 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
-		22C8DE852C66AB3400538059 /* NoticiasVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiasVIew.swift; sourceTree = "<group>"; };
+		22C8DE852C66AB3400538059 /* NoticiasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiasView.swift; sourceTree = "<group>"; };
 		22DC0EB12C82378B0070326F /* ConfirmacaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmacaoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,7 @@
 				22C8DE752C66A6C600538059 /* Assets.xcassets */,
 				22C8DE772C66A6C600538059 /* Preview Content */,
 				22C8DE832C66AA5B00538059 /* PerfilView.swift */,
-				22C8DE852C66AB3400538059 /* NoticiasVIew.swift */,
+				22C8DE852C66AB3400538059 /* NoticiasView.swift */,
 				22C006262C6FEB0300554235 /* AreaConsultaView.swift */,
 				225452282C7E49D000A404F9 /* AgendamentoHorarioView.swift */,
 				22DC0EB12C82378B0070326F /* ConfirmacaoView.swift */,
@@ -168,6 +168,8 @@
 				22C8DE742C66A6C600538059 /* MainView.swift in Sources */,
 				22C8DE862C66AB3400538059 /* NoticiasVIew.swift in Sources */,
 				22155AE92C8784A400F003AE /* HistoricoConsultasView.swift in Sources */,
+				22C8DE742C66A6C600538059 /* ContentView.swift in Sources */,
+				22C8DE862C66AB3400538059 /* NoticiasView.swift in Sources */,
 				22C8DE842C66AA5B00538059 /* PerfilView.swift in Sources */,
 				22C8DE802C66A9ED00538059 /* ContentView.swift in Sources */,
 				22DC0EB22C82378B0070326F /* ConfirmacaoView.swift in Sources */,
@@ -308,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"clinicampus/Preview Content\"";
+				DEVELOPMENT_TEAM = 7S4DA952U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -337,6 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"clinicampus/Preview Content\"";
+				DEVELOPMENT_TEAM = 7S4DA952U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
