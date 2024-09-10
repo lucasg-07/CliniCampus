@@ -26,8 +26,8 @@ struct HistoricoConsultasView: View {
                    }
                    .padding()
                }
-               .navigationTitle("Consultas Agendadas")
-               .navigationBarTitleDisplayMode(.automatic)
+               .navigationTitle("Histórico de Consultas")
+               .navigationBarTitleDisplayMode(.inline)
            }
        }
    }
