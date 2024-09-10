@@ -3,13 +3,16 @@ import SwiftUI
 struct ConfirmacaoView: View {
     var oftalmologista: Oftalmologista
     var horario: String
+    @State private var showAlert = false
+    @Binding var showingConfirmationPopup : Bool
+    @Binding var navigateToMain: Bool  // Binding para controlar a navegação na view anterior
     
     var body: some View {
         VStack(spacing: 20) {
             Text("Confirmando Agendamento")
                 .font(.headline)
             
-            Image("doctor_profile_image") // substitua pelo nome correto da sua imagem
+            Image("Bia")
                 .resizable()
                 .frame(width: 100, height: 100)
                 .clipShape(Circle())
@@ -26,11 +29,10 @@ struct ConfirmacaoView: View {
                 Text("Quarta-Feira, \(oftalmologista.dia) às \(horario)")
             }
             .font(.subheadline)
-            
-            Spacer()
-            
+                            
             Button(action: {
-                // ação ao confirmar o agendamento
+                showAlert = true
+
             }) {
                 Text("Confirmar")
                     .frame(maxWidth: .infinity)
@@ -39,13 +41,23 @@ struct ConfirmacaoView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
-            .padding()
+            .alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text("Sucesso"),
+                    message: Text("Consulta marcada com sucesso"),
+                    dismissButton: .default(Text("OK")) {
+                        // Ao fechar o alerta, a navegação é ativada
+                        navigateToMain = true
+                        showingConfirmationPopup = false
+
+                    }
+                )
+            }
         }
         .padding()
     }
 }
 
-
 #Preview {
-    ConfirmacaoView(oftalmologista:Oftalmologista(nome: "Dr. Osvaldo Junior", dia: "Qua 03/04", horarios: ["10:00", "13:00", "16:00"]), horario: "10:00")
+    ConfirmacaoView(oftalmologista: Oftalmologista(nome: "Dr. Osvaldo Junior", dia: "Qua 03/04", horarios: ["10:00", "13:00", "16:00"]), horario: "10:00",showingConfirmationPopup: .constant(false), navigateToMain: .constant(false))
 }

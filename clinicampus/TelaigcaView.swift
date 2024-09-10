@@ -94,25 +94,25 @@ struct TelaigcaView: View {
                             .font(.headline)
                         
                         ZStack {
-                            Image("linhas")
-                            
-                            HStack {
-                                Text("Dr. Osvlado Jr")
+                            NavigationLink(destination:ConsultasAgendadas()){
+                                Image("linhas")
+                            }
+                            VStack {
+                                Text("Dr. Osvaldo Jr")
+                                    .bold()
+                                    .font(.headline)
+                                    .padding(.top)
+                                Text("Oftalmologista")
+                              
+                                        Spacer()
                                     .foregroundColor(.black)
                                 
-                                Spacer()
+                            
                                 
-                                NavigationLink(destination:AreaConsultaView()){
-                                    Text("Agendar")
-                                    Image(systemName: "plus")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 20, height: 11.5)
-                                }
                                 .padding(.horizontal,10)
                                 .padding(.vertical, 8)
-                                .background(Color.cabecalho)
-                                .cornerRadius(10)
+                                
+                            
                                 .foregroundColor(.white)
                                 
                                 
