@@ -96,28 +96,23 @@ struct TelaigcaView: View {
                         ZStack {
                             NavigationLink(destination:ConsultasAgendadas()){
                                 Image("linhas")
+                                    .resizable()
+                                    .scaledToFit()
+                               
                             }
-                            VStack {
-                                Text("Dr. Osvaldo Jr")
-                                    .bold()
-                                    .font(.headline)
-                                    .padding(.top)
-                                Text("Oftalmologista")
-                              
-                                        Spacer()
-                                    .foregroundColor(.black)
-                                
-                            
-                                
-                                .padding(.horizontal,10)
-                                .padding(.vertical, 8)
-                                
-                            
-                                .foregroundColor(.white)
-                                
-                                
-                            }
-                            .padding()
+                            VStack(alignment: .leading) {
+                                                Text("Dr. Osvaldo Júnior")
+                                                    .font(.headline)
+                                                    .foregroundColor(.black)
+                                                Text("Oftalmologista")
+                                                    .font(.subheadline)
+                                                    .foregroundColor(.black)
+                                                Text("Abr 03, 10:00am")
+                                                    .font(.caption)
+                                                    .foregroundColor(.black)
+                                            }
+                                            .padding()
+                                        
                         .cornerRadius(10)
                         }
                     }
@@ -142,6 +137,7 @@ struct TelaigcaView: View {
         }
     }
 }
+
 
 struct TelaigcaView_Previews: PreviewProvider {
     static var previews: some View {

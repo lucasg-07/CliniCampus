@@ -56,7 +56,7 @@ struct ConsultasAgendadas: View {
                         }
                         .padding()
                         .frame(maxWidth:320, minHeight:100)
-                        .background(Color.red)
+                        .background(.cabecalho)
                         .cornerRadius(15)
                     }
                     .navigationTitle("Consultas Agendadas")
