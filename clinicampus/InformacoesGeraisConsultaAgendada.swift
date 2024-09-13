@@ -22,7 +22,7 @@ struct InformacoesGeraisConsultaAgendada: View {
                     
                     Image("Bia")
                         .resizable()
-                        .frame(width: 100, height: 100)
+                        .frame(maxWidth: 100, maxHeight: 100)
                         .clipShape(Circle())
                         .padding(.bottom)
                         .padding(.horizontal,15)
@@ -93,31 +93,33 @@ struct InformacoesGeraisConsultaAgendada: View {
                         Text("Próximos agendamentos")
                             .font(.headline)
                         
-                        ZStack {
-                            NavigationLink(destination:ConsultasAgendadas()){
+                        NavigationLink(destination:ConsultasAgendadas()){
+                            
+                            ZStack {
                                 Image("linhas")
                                     .resizable()
                                     .scaledToFit()
-                               
+                                VStack(alignment: .leading) {
+                                    Text("Dr. Osvaldo Júnior")
+                                        .font(.headline)
+                                        .foregroundColor(.black)
+                                    Text("Oftalmologista")
+                                        .font(.subheadline)
+                                        .foregroundColor(.black)
+                                    Text("Abr 03, 10:00am")
+                                        .font(.caption)
+                                        .foregroundColor(.black)
+                                }
+                                .padding(.trailing)
+                                
+                                .cornerRadius(10)
                             }
-                            VStack(alignment: .leading) {
-                                                Text("Dr. Osvaldo Júnior")
-                                                    .font(.headline)
-                                                    .foregroundColor(.black)
-                                                Text("Oftalmologista")
-                                                    .font(.subheadline)
-                                                    .foregroundColor(.black)
-                                                Text("Abr 03, 10:00am")
-                                                    .font(.caption)
-                                                    .foregroundColor(.black)
-                                            }
-                            .padding(.trailing,130)
-                            
-                                        
-                        .cornerRadius(10)
                         }
+                        
                     }
-                
+                    
+                    
+                    
                     Spacer().frame(height: 20)
                     
                     VStack(alignment: .leading) {
@@ -137,7 +139,7 @@ struct InformacoesGeraisConsultaAgendada: View {
             }
         }
         .navigationBarBackButtonHidden(true)
-
+        
     }
     
 }
