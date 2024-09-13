@@ -10,26 +10,14 @@ import SwiftUI
 struct AreaConsultaView: View {
     var body: some View {
         
-        NavigationView{
+        NavigationStack{
             VStack {
-                HStack
-                {
-                   
-                    Text("Áreas de consulta")
-                        .bold()
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                        .padding(.top,40)
-
-                    
-                }
-                .padding(.bottom,80)
-                
-                
+//
                 
                     NavigationLink("Avaliação Biomédica", destination:  AgendamentoHorarioView())
-                        .padding(.horizontal,30)
+                        .padding(.horizontal,57)
                         .padding()
-                        .font(.title)
+                        .font(.title3)
                         .shadow(radius: 10)
                         .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
                         .clipShape(.rect(cornerRadius: 16))
@@ -37,9 +25,9 @@ struct AreaConsultaView: View {
                     
                     
                     NavigationLink("Odontologia", destination: AgendamentoHorarioView())
-                        .padding(.horizontal,80)
+                        .padding(.horizontal,91)
                         .padding()
-                        .font(.title)
+                        .font(.title3)
                         .shadow(radius: 10)
                         .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
                         .clipShape(.rect(cornerRadius: 16))
@@ -48,9 +36,9 @@ struct AreaConsultaView: View {
                     
                     
                     NavigationLink("Oftalmologia", destination: AgendamentoHorarioView())
-                        .padding(.horizontal,80)
+                        .padding(.horizontal,89)
                         .padding()
-                        .font(.title)
+                        .font(.title3)
                         .shadow(radius: 10)
                         .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
                         .clipShape(.rect(cornerRadius: 16))
@@ -62,7 +50,7 @@ struct AreaConsultaView: View {
                     NavigationLink("Psicologia", destination: AgendamentoHorarioView())
                         .padding(.horizontal,100)
                         .padding()
-                        .font(.title)
+                        .font(.title3)
                         .shadow(radius: 10)
                         .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
                         .clipShape(.rect(cornerRadius: 16))
@@ -71,17 +59,19 @@ struct AreaConsultaView: View {
                     
                     
                     NavigationLink("Testes Rápidos", destination: AgendamentoHorarioView())
-                        .padding(.horizontal,70)
+                        .padding(.horizontal,78)
                         .padding()
-                        .font(.title)
+                        .font(.title3)
                         .shadow(radius: 10)
                         .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
                         .clipShape(.rect(cornerRadius: 16))
                         .foregroundStyle(.white)
                         
                 }
+            .padding(.bottom)
+            .navigationTitle("Área de Consultas")
+            .navigationBarTitleDisplayMode(.inline)
                 
-                Spacer()
             }
             
         }

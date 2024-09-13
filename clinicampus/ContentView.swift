@@ -8,12 +8,7 @@ struct ContentView: View {
                     Image(systemName: "house")
                     Text("Início")
                 }
-            
-            AreaConsultaView()
-                .tabItem {
-                    Image(systemName: "doc.text")
-                    Text("Consultas")
-                }
+                
             NoticiasView()
                 .tabItem {
                     Image(systemName: "megaphone")
