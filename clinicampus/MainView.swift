@@ -2,7 +2,7 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        NavigationView{
+        NavigationStack{
             VStack {
                 HStack {
                     Text("CliniCampus")
@@ -129,6 +129,8 @@ struct MainView: View {
                 
             }
         }
+        .navigationBarBackButtonHidden(true) 
+
     }
 }
 

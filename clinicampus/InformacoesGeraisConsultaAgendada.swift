@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct TelaigcaView: View {
+struct InformacoesGeraisConsultaAgendada: View {
     var body: some View {
-        NavigationView{
+        NavigationStack{
             VStack {
                 HStack {
                     Text("CliniCampus")
@@ -136,12 +136,15 @@ struct TelaigcaView: View {
                 
             }
         }
+        .navigationBarBackButtonHidden(true)
+
     }
+    
 }
 
 
-struct TelaigcaView_Previews: PreviewProvider {
+struct InformacoesGeraisConsultaAgendada_previews: PreviewProvider {
     static var previews: some View {
-        TelaigcaView()
+        InformacoesGeraisConsultaAgendada()
     }
 }
