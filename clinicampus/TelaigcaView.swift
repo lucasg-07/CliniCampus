@@ -111,7 +111,8 @@ struct TelaigcaView: View {
                                                     .font(.caption)
                                                     .foregroundColor(.black)
                                             }
-                                            .padding()
+                            .padding(.trailing,130)
+                            
                                         
                         .cornerRadius(10)
                         }
