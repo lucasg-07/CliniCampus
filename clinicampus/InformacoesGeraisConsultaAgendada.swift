@@ -1,6 +1,13 @@
+//
+//  TelaigcaView.swift
+//  clinicampus
+//
+//  Created by found on 10/09/24.
+//
+
 import SwiftUI
 
-struct MainView: View {
+struct InformacoesGeraisConsultaAgendada: View {
     var body: some View {
         NavigationStack{
             VStack {
@@ -30,7 +37,7 @@ struct MainView: View {
                                     VStack {
                                         Image(systemName: "calendar.badge.plus")
                                             .font(.largeTitle)
-                                            .foregroundColor(.red)
+                                            .foregroundColor(.cabecalho)
                                         
                                         
                                         Text("Agendar consulta")
@@ -47,7 +54,7 @@ struct MainView: View {
                                     VStack{
                                         Image(systemName: "list.bullet")
                                             .font(.largeTitle)
-                                            .foregroundColor(.red)
+                                            .foregroundColor(.cabecalho)
                                         
                                             .padding(.bottom,6)
                                         Text("Consultas agendadas")
@@ -57,14 +64,14 @@ struct MainView: View {
                                     .padding(.horizontal,2)
                                     .padding(.vertical,51)
                                     .background(Color.gray.opacity(0.2))
-                                .cornerRadius(10)
+                                    .cornerRadius(10)
                                 }
                                 
                                 NavigationLink(destination:HistoricoConsultasView()) {
                                     VStack{
                                         Image(systemName: "doc.text")
                                             .font(.largeTitle)
-                                            .foregroundColor(.red)
+                                            .foregroundColor(.cabecalho)
                                         
                                         Text("Histórico de consultas")
                                             .font(.subheadline)
@@ -73,7 +80,7 @@ struct MainView: View {
                                     .padding(.horizontal,2)
                                     .padding(.vertical,51)
                                     .background(Color.gray.opacity(0.2))
-                                .cornerRadius(10)
+                                    .cornerRadius(10)
                                 }
                             }
                             
@@ -86,31 +93,31 @@ struct MainView: View {
                         Text("Próximos agendamentos")
                             .font(.headline)
                         
-                        HStack {
-                            Text("Sem agendamentos próximos")
-                                .foregroundColor(.gray)
-                            
-                            Spacer()
-                            
-                            NavigationLink(destination: AreaConsultaView()){
-                                    Text("Agendar")
-                                    Image(systemName: "plus")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 20, height: 11.5)
-                                }
-                                .padding(.horizontal,10)
-                                .padding(.vertical, 8)
-                                .background(Color.red)
-                                .cornerRadius(10)
-                                .foregroundColor(.white)
+                        ZStack {
+                            NavigationLink(destination:ConsultasAgendadas()){
+                                Image("linhas")
+                                    .resizable()
+                                    .scaledToFit()
+                               
                             }
-
-                        .padding()
-                        .background(Color.gray.opacity(0.2))
+                            VStack(alignment: .leading) {
+                                                Text("Dr. Osvaldo Júnior")
+                                                    .font(.headline)
+                                                    .foregroundColor(.black)
+                                                Text("Oftalmologista")
+                                                    .font(.subheadline)
+                                                    .foregroundColor(.black)
+                                                Text("Abr 03, 10:00am")
+                                                    .font(.caption)
+                                                    .foregroundColor(.black)
+                                            }
+                            .padding(.trailing,130)
+                            
+                                        
                         .cornerRadius(10)
+                        }
                     }
-                    
+                
                     Spacer().frame(height: 20)
                     
                     VStack(alignment: .leading) {
@@ -129,11 +136,15 @@ struct MainView: View {
                 
             }
         }
-        .navigationBarBackButtonHidden(true) 
+        .navigationBarBackButtonHidden(true)
 
     }
+    
 }
 
-#Preview {
-    MainView()
+
+struct InformacoesGeraisConsultaAgendada_previews: PreviewProvider {
+    static var previews: some View {
+        InformacoesGeraisConsultaAgendada()
+    }
 }

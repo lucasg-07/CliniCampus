@@ -18,10 +18,11 @@ import SwiftUI
     
 struct ConsultasAgendadas: View {
     let consultas: [Consulta] = [
-        Consulta(medico: "Dra. Cris", data: "14/04 às 10:00", area: "Odontologia", imagem: "docto"),
-        Consulta(medico: "Dr. Fran", data: "10/03 às 10:00", area: "Psicologia", imagem: "doctor_image_2"),
-        Consulta(medico: "Dra. Emily", data: "10/03 às 10:00", area: "Psicologia", imagem: "doctor_image_3"),
-        Consulta(medico: "Dra.Kamila", data: "10/03 às 10:00", area: "Oftamologia", imagem: "doctor_image_4"),
+        Consulta(medico: "Dra. Cris", data: "14/04 às 10:00", area: "Odontologia", imagem: "Bia"),
+        Consulta(medico: "Dr. Fran", data: "10/03 às 10:00", area: "Psicologia", imagem: "Bia"),
+        Consulta(medico: "Dra. Emily", data: "10/03 às 10:00", area: "Psicologia", imagem: "Bia"),
+        Consulta(medico: "Dra.Kamila", data: "10/03 às 10:00", area: "Oftamologia", imagem: "Bia"),
+        
     ]
     
     
@@ -36,9 +37,9 @@ struct ConsultasAgendadas: View {
                         HStack {
                             Image(consulta.imagem)
                                 .resizable()
-                                .frame(width: 50, height: 50)
                                 .clipShape(Circle())
-                                .padding(.trailing, 10)
+                                .frame(width: 70, height: 70)
+                                .padding(.trailing, 40)
                             
                             VStack(alignment: .leading){
                                 Text("Médico: \(consulta.medico)")
@@ -56,7 +57,7 @@ struct ConsultasAgendadas: View {
                         }
                         .padding()
                         .frame(maxWidth:320, minHeight:100)
-                        .background(Color.red)
+                        .background(.cabecalho)
                         .cornerRadius(15)
                     }
                     .navigationTitle("Consultas Agendadas")
