@@ -11,6 +11,8 @@
 		224A8B962C7E3EA600C40FDA /* ConsultasAgendadas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A8B952C7E3EA600C40FDA /* ConsultasAgendadas.swift */; };
 		225452292C7E49D000A404F9 /* AgendamentoHorarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225452282C7E49D000A404F9 /* AgendamentoHorarioView.swift */; };
 		22908DEB2C823E8A00EF7983 /* HistoricoConsultasEspecifico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22908DEA2C823E8A00EF7983 /* HistoricoConsultasEspecifico.swift */; };
+		22A32B152C94A773006F0EC0 /* NoticiaItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A32B142C94A773006F0EC0 /* NoticiaItemView.swift */; };
+		22A32B172C94A874006F0EC0 /* NoticiaItemSimplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A32B162C94A874006F0EC0 /* NoticiaItemSimplesView.swift */; };
 		22C006272C6FEB0300554235 /* AreaConsultaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C006262C6FEB0300554235 /* AreaConsultaView.swift */; };
 		22C8DE722C66A6C600538059 /* clinicampusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8DE712C66A6C600538059 /* clinicampusApp.swift */; };
 		22C8DE742C66A6C600538059 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C8DE732C66A6C600538059 /* MainView.swift */; };
@@ -27,6 +29,8 @@
 		224A8B952C7E3EA600C40FDA /* ConsultasAgendadas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultasAgendadas.swift; sourceTree = "<group>"; };
 		225452282C7E49D000A404F9 /* AgendamentoHorarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AgendamentoHorarioView.swift; path = ../AgendamentoHorarioView.swift; sourceTree = "<group>"; };
 		22908DEA2C823E8A00EF7983 /* HistoricoConsultasEspecifico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoConsultasEspecifico.swift; sourceTree = "<group>"; };
+		22A32B142C94A773006F0EC0 /* NoticiaItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiaItemView.swift; sourceTree = "<group>"; };
+		22A32B162C94A874006F0EC0 /* NoticiaItemSimplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiaItemSimplesView.swift; sourceTree = "<group>"; };
 		22C006262C6FEB0300554235 /* AreaConsultaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaConsultaView.swift; sourceTree = "<group>"; };
 		22C8DE6E2C66A6C600538059 /* clinicampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clinicampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C8DE712C66A6C600538059 /* clinicampusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clinicampusApp.swift; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 				22908DEA2C823E8A00EF7983 /* HistoricoConsultasEspecifico.swift */,
 				22C8DE7F2C66A9ED00538059 /* ContentView.swift */,
 				22C8DE712C66A6C600538059 /* clinicampusApp.swift */,
+				22A32B142C94A773006F0EC0 /* NoticiaItemView.swift */,
 				22C8DE732C66A6C600538059 /* MainView.swift */,
 				22C8DE752C66A6C600538059 /* Assets.xcassets */,
 				22C8DE772C66A6C600538059 /* Preview Content */,
@@ -82,6 +87,7 @@
 				225452282C7E49D000A404F9 /* AgendamentoHorarioView.swift */,
 				22DC0EB12C82378B0070326F /* ConfirmacaoView.swift */,
 				22155AE82C8784A400F003AE /* HistoricoConsultasView.swift */,
+				22A32B162C94A874006F0EC0 /* NoticiaItemSimplesView.swift */,
 			);
 			path = clinicampus;
 			sourceTree = "<group>";
@@ -166,13 +172,15 @@
 			files = (
 				225452292C7E49D000A404F9 /* AgendamentoHorarioView.swift in Sources */,
 				22C8DE742C66A6C600538059 /* MainView.swift in Sources */,
-				22C8DE862C66AB3400538059 /* NoticiasVIew.swift in Sources */,
+				22C8DE862C66AB3400538059 /* NoticiasView.swift in Sources */,
 				22155AE92C8784A400F003AE /* HistoricoConsultasView.swift in Sources */,
-				22C8DE742C66A6C600538059 /* ContentView.swift in Sources */,
+				22C8DE742C66A6C600538059 /* MainView.swift in Sources */,
+				22A32B172C94A874006F0EC0 /* NoticiaItemSimplesView.swift in Sources */,
 				22C8DE862C66AB3400538059 /* NoticiasView.swift in Sources */,
 				22C8DE842C66AA5B00538059 /* PerfilView.swift in Sources */,
 				22C8DE802C66A9ED00538059 /* ContentView.swift in Sources */,
 				22DC0EB22C82378B0070326F /* ConfirmacaoView.swift in Sources */,
+				22A32B152C94A773006F0EC0 /* NoticiaItemView.swift in Sources */,
 				22C006272C6FEB0300554235 /* AreaConsultaView.swift in Sources */,
 				22C8DE722C66A6C600538059 /* clinicampusApp.swift in Sources */,
 				224A8B962C7E3EA600C40FDA /* ConsultasAgendadas.swift in Sources */,
