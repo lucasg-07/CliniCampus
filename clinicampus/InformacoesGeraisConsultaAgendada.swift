@@ -98,53 +98,54 @@ struct InformacoesGeraisConsultaAgendada: View {
                                 Image("linhas")
                                     .resizable()
                                     .scaledToFit()
-                               
+                                
                             }
                             VStack(alignment: .leading) {
-                                                Text("Dr. Osvaldo Júnior")
-                                                    .font(.headline)
-                                                    .foregroundColor(.black)
-                                                Text("Oftalmologista")
-                                                    .font(.subheadline)
-                                                    .foregroundColor(.black)
-                                                Text("Abr 03, 10:00am")
-                                                    .font(.caption)
-                                                    .foregroundColor(.black)
-                                            }
-                            .padding(.trailing,130)
-                            
-                                        
-                        .cornerRadius(10)
+                                Text("Dr. Osvaldo Júnior")
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                                Text("Oftalmologista")
+                                    .font(.subheadline)
+                                    .foregroundColor(.white)
+                                Text("Abr 03, 10:00am")
+                                    .font(.caption)
+                                    .foregroundColor(.white)
+                                
+                                    .padding(.trailing,130)
+                                
+                                
+                                    .cornerRadius(10)
+                            }
                         }
-                    }
-                
-                    Spacer().frame(height: 20)
-                    
-                    VStack(alignment: .leading) {
-                        Text("Campanhas")
-                            .font(.headline)
                         
-                        Image("campanha1")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .cornerRadius(10)
+                        Spacer().frame(height: 20)
+                        
+                        VStack(alignment: .leading) {
+                            Text("Campanhas")
+                                .font(.headline)
+                            
+                            Image("campanha1")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(10)
+                        }
+                        
+                        Spacer()
                     }
+                    .padding()
                     
-                    Spacer()
                 }
-                .padding()
-                
             }
+            .navigationBarBackButtonHidden(true)
+            
         }
-        .navigationBarBackButtonHidden(true)
-
+        
     }
     
-}
-
-
-struct InformacoesGeraisConsultaAgendada_previews: PreviewProvider {
-    static var previews: some View {
-        InformacoesGeraisConsultaAgendada()
+    
+    struct InformacoesGeraisConsultaAgendada_previews: PreviewProvider {
+        static var previews: some View {
+            InformacoesGeraisConsultaAgendada()
+        }
     }
 }
