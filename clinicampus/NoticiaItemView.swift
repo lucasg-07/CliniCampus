@@ -1,10 +1,3 @@
-//
-//  NoticiasItemView.swift
-//  clinicampus
-//
-//  Created by found on 13/09/24.
-//
-
 import SwiftUI
 
 struct NoticiaItemView: View {
@@ -18,17 +11,20 @@ struct NoticiaItemView: View {
         VStack(alignment: .leading, spacing: 8) {
             Image(imagemNome)
                 .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(height: 120)
+                .aspectRatio(contentMode: .fit) 
+                .frame(maxWidth: .infinity)
                 .cornerRadius(10)
+                .clipped()
             
             Text(titulo)
                 .font(.headline)
                 .bold()
+                .lineLimit(2)
             
             Text(descricao)
                 .font(.subheadline)
                 .foregroundColor(.gray)
+                .lineLimit(3)
             
             HStack {
                 Text(tempo)
@@ -42,6 +38,8 @@ struct NoticiaItemView: View {
                     .foregroundColor(.gray)
             }
         }
+        .padding(.vertical, 10)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 

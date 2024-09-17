@@ -83,7 +83,7 @@ struct AgendamentoHorarioView: View {
                 }
             }
             .navigationDestination(isPresented: $navigateToMain) {
-                MainView()
+                InformacoesGeraisConsultaAgendada()
             }
         }
     }

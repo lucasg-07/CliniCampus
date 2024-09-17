@@ -11,75 +11,83 @@ struct AreaConsultaView: View {
     var body: some View {
         
         NavigationStack{
-            VStack {
-//
+            VStack(spacing: 20){
+                //
                 
-                    NavigationLink("Avaliação Biomédica", destination:  AgendamentoHorarioView())
-                        .padding(.horizontal,57)
-                        .padding()
+                NavigationLink(destination: AgendamentoHorarioView()){
+                    Text("Avaliação Biomédica")
+                        .frame(minWidth: 320,minHeight: 50)
                         .font(.title3)
                         .shadow(radius: 10)
                         .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
                         .clipShape(.rect(cornerRadius: 16))
                         .foregroundStyle(.white)
-                    
-                    
-                    NavigationLink("Odontologia", destination: AgendamentoHorarioView())
-                        .padding(.horizontal,91)
-                        .padding()
-                        .font(.title3)
-                        .shadow(radius: 10)
-                        .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
-                        .clipShape(.rect(cornerRadius: 16))
-                        .foregroundStyle(.white)
-                        .padding()
-                    
-                    
-                    NavigationLink("Oftalmologia", destination: AgendamentoHorarioView())
-                        .padding(.horizontal,89)
-                        .padding()
-                        .font(.title3)
-                        .shadow(radius: 10)
-                        .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
-                        .clipShape(.rect(cornerRadius: 16))
-                        .foregroundStyle(.white)
-                       
-                    
-                    
-                    
-                    NavigationLink("Psicologia", destination: AgendamentoHorarioView())
-                        .padding(.horizontal,100)
-                        .padding()
-                        .font(.title3)
-                        .shadow(radius: 10)
-                        .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
-                        .clipShape(.rect(cornerRadius: 16))
-                        .foregroundStyle(.white)
-                        .padding()
-                    
-                    
-                    NavigationLink("Testes Rápidos", destination: AgendamentoHorarioView())
-                        .padding(.horizontal,78)
-                        .padding()
-                        .font(.title3)
-                        .shadow(radius: 10)
-                        .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
-                        .clipShape(.rect(cornerRadius: 16))
-                        .foregroundStyle(.white)
-                        
                 }
+                
+                
+                
+                NavigationLink(destination: AgendamentoHorarioView()){
+                    Text("Odontologia")
+                        .frame(minWidth: 320,minHeight: 50)
+                        .font(.title3)
+                        .shadow(radius: 10)
+                        .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
+                        .clipShape(.rect(cornerRadius: 16))
+                        .foregroundStyle(.white)
+                }
+                
+                
+                
+                
+                NavigationLink(destination: AgendamentoHorarioView()){
+                    Text("Oftamologia")
+                        .frame(minWidth: 320,minHeight: 50)
+                        .font(.title3)
+                        .shadow(radius: 10)
+                        .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
+                        .clipShape(.rect(cornerRadius: 16))
+                        .foregroundStyle(.white)
+                }
+                
+                
+                
+                
+                
+                NavigationLink(destination: AgendamentoHorarioView()){
+                    Text("Psicologia")
+                        .frame(minWidth: 320,minHeight: 50)
+                        .font(.title3)
+                        .shadow(radius: 10)
+                        .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
+                        .clipShape(.rect(cornerRadius: 16))
+                        .foregroundStyle(.white)
+                }
+                
+                
+                
+                NavigationLink(destination: AgendamentoHorarioView()){
+                    Text("Testes Rápidos")
+                        .frame(minWidth: 320,minHeight: 50)
+                        .font(.title3)
+                        .shadow(radius: 10)
+                        .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
+                        .clipShape(.rect(cornerRadius: 16))
+                        .foregroundStyle(.white)
+                }
+                
+            }
             .padding(.bottom)
             .navigationTitle("Área de Consultas")
             .navigationBarTitleDisplayMode(.inline)
-                
-            }
             
         }
+        
     }
-    
-    #Preview {
-        AreaConsultaView()
-    }
-    
-    
+}
+
+#Preview {
+    AreaConsultaView()
+}
+
+
 
