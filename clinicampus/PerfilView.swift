@@ -6,7 +6,7 @@ struct PerfilView: View {
     @State private var sexo = "Feminino"
     @State private var matricula = "202200011101"
     @State private var telefone = "(85) 01234-5678"
-    @State private var mostrarInformacoesMedicas = true
+    @State private var mostrarInformacoesMedicas = false
     @State private var alergias = "Poeira e Pêlos de animais"
     @State private var altura = "153 cm"
     @State private var peso = "52 kg"
@@ -16,7 +16,7 @@ struct PerfilView: View {
     @State private var botaoEditar : String = "Editar"
 
     var body: some View {
-        NavigationView {
+        NavigationStack{
             ScrollView {
                 Image("Bia")
                     .resizable()
@@ -31,15 +31,6 @@ struct PerfilView: View {
                     .fontWeight(.medium)
                     .frame(maxWidth: .infinity, alignment: .center)
 
-                Button(action: {
-                    editandoPerfil.toggle()
-                    mostrarInformacoesMedicas = true
-                }) {
-                    Text("Editar perfil")
-                        .foregroundColor(.gray)
-                        .font(.subheadline)
-                        .frame(maxWidth: .infinity, alignment: .center)
-                }
 
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Informações Pessoais")

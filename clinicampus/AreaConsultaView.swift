@@ -12,7 +12,7 @@ struct AreaConsultaView: View {
         
         NavigationStack{
             VStack(spacing: 20){
-//
+                //
                 
                 NavigationLink(destination: AgendamentoHorarioView()){
                     Text("Avaliação Biomédica")
@@ -22,9 +22,10 @@ struct AreaConsultaView: View {
                         .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
                         .clipShape(.rect(cornerRadius: 16))
                         .foregroundStyle(.white)
-                    }
-                    
-                    
+                }
+                
+                
+                
                 NavigationLink(destination: AgendamentoHorarioView()){
                     Text("Odontologia")
                         .frame(minWidth: 320,minHeight: 50)
@@ -33,10 +34,11 @@ struct AreaConsultaView: View {
                         .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
                         .clipShape(.rect(cornerRadius: 16))
                         .foregroundStyle(.white)
-                    }
-                        
-                    
-                    
+                }
+                
+                
+                
+                
                 NavigationLink(destination: AgendamentoHorarioView()){
                     Text("Oftamologia")
                         .frame(minWidth: 320,minHeight: 50)
@@ -45,11 +47,12 @@ struct AreaConsultaView: View {
                         .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
                         .clipShape(.rect(cornerRadius: 16))
                         .foregroundStyle(.white)
-                    }
-                       
-                    
-                    
-                    
+                }
+                
+                
+                
+                
+                
                 NavigationLink(destination: AgendamentoHorarioView()){
                     Text("Psicologia")
                         .frame(minWidth: 320,minHeight: 50)
@@ -58,9 +61,10 @@ struct AreaConsultaView: View {
                         .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
                         .clipShape(.rect(cornerRadius: 16))
                         .foregroundStyle(.white)
-                    }
-                    
-                    
+                }
+                
+                
+                
                 NavigationLink(destination: AgendamentoHorarioView()){
                     Text("Testes Rápidos")
                         .frame(minWidth: 320,minHeight: 50)
@@ -69,20 +73,21 @@ struct AreaConsultaView: View {
                         .background(Color(hue: 1.0, saturation: 0.978, brightness: 0.773))
                         .clipShape(.rect(cornerRadius: 16))
                         .foregroundStyle(.white)
-                    }
-                        
                 }
-            .navigationTitle("Área de Consultas")
-            .navigationBarTitleDisplayMode(.inline)
                 
             }
+            .padding(.bottom)
+            .navigationTitle("Área de Consultas")
+            .navigationBarTitleDisplayMode(.inline)
             
         }
+        
     }
-    
-    #Preview {
-        AreaConsultaView()
-    }
-    
-    
+}
+
+#Preview {
+    AreaConsultaView()
+}
+
+
 
