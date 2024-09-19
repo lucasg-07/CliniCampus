@@ -57,7 +57,7 @@ struct HistoricoConsultasView: View {
                             Text("Mais detalhes")
                                 .frame(maxWidth: .infinity)
                                 .padding()
-                                .background(Color.red)
+                                .background(.cabecalho)
                                 .foregroundColor(.white)
                                 .cornerRadius(10)
                         }
