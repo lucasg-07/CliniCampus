@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct MainView: View {
+struct InformacoesGeraisConsultaAgendada: View {
     var body: some View {
         NavigationStack {
             VStack {
@@ -30,7 +30,7 @@ struct MainView: View {
                                     ZStack {
                                         Circle()
                                             .fill(Color.cabecalho)
-                                            .frame(width: 60, height: 60)
+                                            .frame(width: 55, height: 55)
                                         Image(systemName: "calendar.badge.plus")
                                             .font(.largeTitle)
                                             .foregroundColor(.white)
@@ -51,7 +51,7 @@ struct MainView: View {
                                     ZStack {
                                         Circle()
                                             .fill(Color.cabecalho)
-                                            .frame(width: 60, height: 60)
+                                            .frame(width: 55, height: 55)
                                         Image(systemName: "list.bullet")
                                             .font(.largeTitle)
                                             .foregroundColor(.white)
@@ -71,7 +71,7 @@ struct MainView: View {
                                     ZStack {
                                         Circle()
                                             .fill(Color.cabecalho)
-                                            .frame(width: 60, height: 60)
+                                            .frame(width: 55, height: 55)
                                         Image(systemName: "doc.text.below.ecg")
                                             .font(.largeTitle)
                                             .foregroundColor(.white)
@@ -87,41 +87,37 @@ struct MainView: View {
                             }
                         }
 
-                        VStack(spacing: 30){
-                            VStack(alignment: .leading, spacing: 10) {
-                                Text("Próximos agendamentos")
-                                    .font(.headline)
-                                
-                                HStack {
-                                    Text("Sem agendamentos")
-                                        .font(.footnote)
-                                        .foregroundColor(.gray)
-                                        .padding(.trailing)
-                                    
-                                    Spacer()
-                                    
-                                    NavigationLink(destination: AreaConsultaView()) {
-                                        HStack {
-                                            Text("Agendar")
-                                            Image(systemName: "plus")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 40, height: 16)
-                                        }
-                                        .padding(.horizontal, 10)
-                                        .padding(.vertical, 8)
-                                        .background(.cabecalho)
-                                        .cornerRadius(10)
-                                        .foregroundColor(.white)
-                                    }
-                                }
-                                .padding(.horizontal,20)
-                                .padding(.vertical,50)
-                                .background(Color.gray.opacity(0.2))
-                                .cornerRadius(10)
-                                
-                            }
+                        VStack(alignment: .leading) {
+                            Text("Próximos agendamentos")
+                                .font(.headline)
                             
+                            NavigationLink(destination:ConsultasAgendadas()){
+                                
+                                ZStack(alignment: .leading) {
+                                    Image("linhas")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                    
+                                    VStack(alignment: .leading) {
+                                        Text("Dr. Osvaldo Júnior")
+                                            .font(.headline)
+                                           
+                                        Text("Oftalmologista")
+                                            .font(.subheadline)
+                                            
+                                        Text("Abr 03, 10:00am")
+                                            .font(.caption)
+                                            
+                                    }
+                                    .foregroundColor(.white)
+                                    .padding(.leading)
+                                    
+                                    
+                                }
+                                .cornerRadius(10)
+                            }
+
                             
                             VStack(alignment: .leading, spacing: 10) {
                                 Text("Campanhas")
@@ -130,9 +126,9 @@ struct MainView: View {
                                 Link(destination: URL(string: "https://www.google.com/?client=safari")!) {
                                     Image("campanha1")
                                         .resizable()
-                                        .frame(width: geometry.size.width - 40)
                                         .aspectRatio(contentMode: .fit)
                                         .cornerRadius(10)
+                                        .frame(width: geometry.size.width - 40)
                                 }
                             }
                         }
@@ -150,5 +146,9 @@ struct MainView: View {
 }
 
 #Preview {
-    MainView()
+    InformacoesGeraisConsultaAgendada()
 }
+
+
+
+
