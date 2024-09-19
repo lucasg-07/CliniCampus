@@ -99,6 +99,27 @@ struct InformacoesGeraisConsultaAgendada: View {
                                 Image("linhas")
                                     .resizable()
                                     .scaledToFit()
+<<<<<<< HEAD
+                                
+                            }
+                            VStack(alignment: .leading) {
+                                Text("Dr. Osvaldo Júnior")
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                                Text("Oftalmologista")
+                                    .font(.subheadline)
+                                    .foregroundColor(.white)
+                                Text("Abr 03, 10:00am")
+                                    .font(.caption)
+                                    .foregroundColor(.white)
+                                
+                                    .padding(.trailing,130)
+                                
+                                
+                                    .cornerRadius(10)
+                            }
+                        }
+=======
                                 VStack(alignment: .leading) {
                                     Text("Dr. Osvaldo Júnior")
                                         .font(.headline)
@@ -125,28 +146,40 @@ struct InformacoesGeraisConsultaAgendada: View {
                     VStack(alignment: .leading) {
                         Text("Campanhas")
                             .font(.headline)
+>>>>>>> e3a363805676e05de6a6c6c35411b44c1928725b
                         
-                        Image("campanha1")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .cornerRadius(10)
+                        Spacer().frame(height: 20)
+                        
+                        VStack(alignment: .leading) {
+                            Text("Campanhas")
+                                .font(.headline)
+                            
+                            Image("campanha1")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(10)
+                        }
+                        
+                        Spacer()
                     }
+                    .padding()
                     
-                    Spacer()
                 }
-                .padding()
-                
             }
+            .navigationBarBackButtonHidden(true)
+            
         }
+<<<<<<< HEAD
+=======
         .navigationBarBackButtonHidden(true)
+>>>>>>> e3a363805676e05de6a6c6c35411b44c1928725b
         
     }
     
-}
-
-
-struct InformacoesGeraisConsultaAgendada_previews: PreviewProvider {
-    static var previews: some View {
-        InformacoesGeraisConsultaAgendada()
+    
+    struct InformacoesGeraisConsultaAgendada_previews: PreviewProvider {
+        static var previews: some View {
+            InformacoesGeraisConsultaAgendada()
+        }
     }
 }
