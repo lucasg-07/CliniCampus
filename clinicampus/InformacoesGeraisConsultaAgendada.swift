@@ -12,80 +12,91 @@ struct InformacoesGeraisConsultaAgendada: View {
         NavigationStack{
             VStack {
                 HStack {
+                    Image(systemName: "stethoscope")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 40)
+                        .foregroundColor(.white)
+                    
                     Text("CliniCampus")
                         .font(.title)
+                        .padding()
                         .foregroundColor(.white)
-                        .padding(.top,40)
-                        .padding(.leading)
+                        .padding(.vertical)
+                 
                     
                     Spacer()
-                    
-                    Image("Bia")
-                        .resizable()
-                        .frame(width: 100, height: 100)
-                        .clipShape(Circle())
-                        .padding(.bottom)
-                        .padding(.horizontal,15)
                 }
                 .background(Color.cabecalho)
                 
                 VStack(alignment: .leading) {
                     HStack {
-                        ScrollView(.horizontal){
-                            HStack {
-                                NavigationLink(destination:AreaConsultaView()){
+                        Group {
+                            NavigationLink(destination:AreaConsultaView()) {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .fill(.black.opacity(0.1))
+                                        .frame(height: 150)
                                     VStack {
                                         Image(systemName: "calendar.badge.plus")
+                                            .padding(0)
                                             .font(.largeTitle)
                                             .foregroundColor(.cabecalho)
                                         
                                         
                                         Text("Agendar consulta")
+                                            .padding(1)
                                             .font(.subheadline)
                                             .foregroundColor(.black)
                                     }
                                     
-                                    .padding(10)
-                                    .padding(.vertical,40)
-                                    .background(Color.gray.opacity(0.2))
-                                    .cornerRadius(10)
                                 }
-                                NavigationLink(destination: AreaConsultaView()) {
+                            }
+                            NavigationLink(destination: AreaConsultaView()) {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .fill(.black.opacity(0.1))
+                                        .frame(height: 150)
                                     VStack{
                                         Image(systemName: "list.bullet")
+                                            .padding(8)
                                             .font(.largeTitle)
                                             .foregroundColor(.cabecalho)
                                         
-                                            .padding(.bottom,6)
                                         Text("Consultas agendadas")
+                                            .padding(2)
                                             .font(.subheadline)
                                             .foregroundColor(.black)
                                     }
-                                    .padding(.horizontal,2)
-                                    .padding(.vertical,51)
-                                    .background(Color.gray.opacity(0.2))
-                                    .cornerRadius(10)
                                 }
-                                
-                                NavigationLink(destination:AreaConsultaView()) {
+                            }
+                            
+                            NavigationLink(destination:AreaConsultaView()) {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .fill(.black.opacity(0.1))
+                                        .frame(height: 150)
+                                    
                                     VStack{
                                         Image(systemName: "doc.text")
+                                            .padding(1)
                                             .font(.largeTitle)
                                             .foregroundColor(.cabecalho)
                                         
                                         Text("Histórico de consultas")
+                                            .padding(1)
                                             .font(.subheadline)
                                             .foregroundColor(.black)
                                     }
-                                    .padding(.horizontal,2)
-                                    .padding(.vertical,51)
-                                    .background(Color.gray.opacity(0.2))
-                                    .cornerRadius(10)
                                 }
                             }
-                            
                         }
+                        .frame(maxWidth: .infinity)
+                        
+                        
                     }
+                    .frame(maxWidth: .infinity)
+                    //                        .background(Color.blue)
                     
                     Spacer().frame(height: 20)
                     
@@ -98,26 +109,26 @@ struct InformacoesGeraisConsultaAgendada: View {
                                 Image("linhas")
                                     .resizable()
                                     .scaledToFit()
-                               
+                                
                             }
                             VStack(alignment: .leading) {
-                                                Text("Dr. Osvaldo Júnior")
-                                                    .font(.headline)
-                                                    .foregroundColor(.black)
-                                                Text("Oftalmologista")
-                                                    .font(.subheadline)
-                                                    .foregroundColor(.black)
-                                                Text("Abr 03, 10:00am")
-                                                    .font(.caption)
-                                                    .foregroundColor(.black)
-                                            }
+                                Text("Dr. Osvaldo Júnior")
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                                Text("Oftalmologista")
+                                    .font(.subheadline)
+                                    .foregroundColor(.white)
+                                Text("Abr 03, 10:00am")
+                                    .font(.caption)
+                                    .foregroundColor(.white)
+                            }
                             .padding(.trailing,130)
                             
-                                        
-                        .cornerRadius(10)
+                            
+                            .cornerRadius(10)
                         }
                     }
-                
+                    
                     Spacer().frame(height: 20)
                     
                     VStack(alignment: .leading) {
