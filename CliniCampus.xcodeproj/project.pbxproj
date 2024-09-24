@@ -34,7 +34,7 @@
 		22A32B162C94A874006F0EC0 /* NoticiaItemSimplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiaItemSimplesView.swift; sourceTree = "<group>"; };
 		22BE5CBE2C90D63400835B8C /* InformacoesGeraisConsultaAgendada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformacoesGeraisConsultaAgendada.swift; sourceTree = "<group>"; };
 		22C006262C6FEB0300554235 /* AreaConsultaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaConsultaView.swift; sourceTree = "<group>"; };
-		22C8DE6E2C66A6C600538059 /* clinicampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clinicampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C8DE6E2C66A6C600538059 /* CliniCampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CliniCampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C8DE712C66A6C600538059 /* clinicampusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clinicampusApp.swift; sourceTree = "<group>"; };
 		22C8DE732C66A6C600538059 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		22C8DE752C66A6C600538059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		22C8DE6F2C66A6C600538059 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22C8DE6E2C66A6C600538059 /* clinicampus.app */,
+				22C8DE6E2C66A6C600538059 /* CliniCampus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,18 +75,18 @@
 		22C8DE702C66A6C600538059 /* clinicampus */ = {
 			isa = PBXGroup;
 			children = (
+				225452282C7E49D000A404F9 /* AgendamentoHorarioView.swift */,
 				224A8B952C7E3EA600C40FDA /* ConsultasAgendadas.swift */,
 				22908DEA2C823E8A00EF7983 /* HistoricoConsultasEspecifico.swift */,
 				22C8DE7F2C66A9ED00538059 /* ContentView.swift */,
 				22C8DE712C66A6C600538059 /* clinicampusApp.swift */,
 				22A32B142C94A773006F0EC0 /* NoticiaItemView.swift */,
 				22C8DE732C66A6C600538059 /* MainView.swift */,
+				22C8DE832C66AA5B00538059 /* PerfilView.swift */,
 				22C8DE752C66A6C600538059 /* Assets.xcassets */,
 				22C8DE772C66A6C600538059 /* Preview Content */,
-				22C8DE832C66AA5B00538059 /* PerfilView.swift */,
 				22C8DE852C66AB3400538059 /* NoticiasView.swift */,
 				22C006262C6FEB0300554235 /* AreaConsultaView.swift */,
-				225452282C7E49D000A404F9 /* AgendamentoHorarioView.swift */,
 				22DC0EB12C82378B0070326F /* ConfirmacaoView.swift */,
 				22BE5CBE2C90D63400835B8C /* InformacoesGeraisConsultaAgendada.swift */,
 				22155AE82C8784A400F003AE /* HistoricoConsultasView.swift */,
@@ -106,9 +106,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		22C8DE6D2C66A6C600538059 /* clinicampus */ = {
+		22C8DE6D2C66A6C600538059 /* CliniCampus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22C8DE7C2C66A6C700538059 /* Build configuration list for PBXNativeTarget "clinicampus" */;
+			buildConfigurationList = 22C8DE7C2C66A6C700538059 /* Build configuration list for PBXNativeTarget "CliniCampus" */;
 			buildPhases = (
 				22C8DE6A2C66A6C600538059 /* Sources */,
 				22C8DE6B2C66A6C600538059 /* Frameworks */,
@@ -118,9 +118,9 @@
 			);
 			dependencies = (
 			);
-			name = clinicampus;
+			name = CliniCampus;
 			productName = clinicampus;
-			productReference = 22C8DE6E2C66A6C600538059 /* clinicampus.app */;
+			productReference = 22C8DE6E2C66A6C600538059 /* CliniCampus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +138,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 22C8DE692C66A6C600538059 /* Build configuration list for PBXProject "clinicampus" */;
+			buildConfigurationList = 22C8DE692C66A6C600538059 /* Build configuration list for PBXProject "CliniCampus" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -151,7 +151,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				22C8DE6D2C66A6C600538059 /* clinicampus */,
+				22C8DE6D2C66A6C600538059 /* CliniCampus */,
 			);
 		};
 /* End PBXProject section */
@@ -378,7 +378,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		22C8DE692C66A6C600538059 /* Build configuration list for PBXProject "clinicampus" */ = {
+		22C8DE692C66A6C600538059 /* Build configuration list for PBXProject "CliniCampus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22C8DE7A2C66A6C600538059 /* Debug */,
@@ -387,7 +387,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22C8DE7C2C66A6C700538059 /* Build configuration list for PBXNativeTarget "clinicampus" */ = {
+		22C8DE7C2C66A6C700538059 /* Build configuration list for PBXNativeTarget "CliniCampus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22C8DE7D2C66A6C700538059 /* Debug */,

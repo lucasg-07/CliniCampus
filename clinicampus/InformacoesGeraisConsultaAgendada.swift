@@ -22,7 +22,7 @@ struct InformacoesGeraisConsultaAgendada: View {
                 .background(Color.cabecalho)
                 
                 GeometryReader { geometry in
-                    VStack(alignment: .leading, spacing: 30) {
+                    VStack(alignment: .center, spacing: 30) {
                         
                         HStack(spacing: 7) {
                             NavigationLink(destination: AreaConsultaView()) {
@@ -131,7 +131,6 @@ struct InformacoesGeraisConsultaAgendada: View {
                             }
                         }                        
                     }
-                    .padding(.leading)
                     .frame(width: geometry.size.width)
                 }
             }
