@@ -28,6 +28,6 @@
 ##  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="5"><b>Realizado por:
   <br>
     <div align="center">
-       <img height="400" width="800" src="foto_equipe.jpeg"/>
+       <img height="400" width="800" src="images/foto_equipe.jpeg"/>
     </div>
 
