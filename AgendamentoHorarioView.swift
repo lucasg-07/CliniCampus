@@ -7,7 +7,7 @@ struct AgendamentoHorarioView: View {
     @State private var selectedOftalmologista: Oftalmologista?
     @State private var showingDatePicker = false
     @State private var showingConfirmationPopup = false
-    @State private var navigateToMain = false  // Novo estado para controlar a navegação para a MainView
+    @State private var navigateToMain = false  
     
     let oftalmologistas: [Oftalmologista] = [
         Oftalmologista(nome: "Dr. Osvaldo Junior", dia: "Qua 03/04", horarios: ["10:00", "13:00", "16:00"]),

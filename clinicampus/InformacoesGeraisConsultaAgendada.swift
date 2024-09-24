@@ -27,40 +27,35 @@ struct InformacoesGeraisConsultaAgendada: View {
                         HStack(spacing: 7) {
                             NavigationLink(destination: AreaConsultaView()) {
                                 VStack {
-                                    ZStack {
-                                        Circle()
-                                            .fill(Color.cabecalho)
-                                            .frame(width: 55, height: 55)
-                                        Image(systemName: "calendar.badge.plus")
-                                            .font(.largeTitle)
-                                            .foregroundColor(.white)
-                                            
-                                    }
+                                    Image(systemName: "calendar.badge.plus")
+                                        .font(.largeTitle)
+                                        .foregroundColor(Color.cabecalho)
+                            
+                
                                     Text("Agendar consulta")
                                         .font(.subheadline)
                                         .foregroundColor(.black)
                                 }
-                                .padding()
+                                .padding(20)
                                 .frame(width: geometry.size.width / 3 - 10)
                                 .background(Color.gray.opacity(0.2))
                                 .cornerRadius(10)
                             }
-                            
+                        
                             NavigationLink(destination: ConsultasAgendadas()) {
                                 VStack {
-                                    ZStack {
-                                        Circle()
-                                            .fill(Color.cabecalho)
-                                            .frame(width: 55, height: 55)
+                                        
                                         Image(systemName: "list.bullet")
                                             .font(.largeTitle)
-                                            .foregroundColor(.white)
-                                    }
+                                            .foregroundColor(Color.cabecalho)
+                                    
                                     Text("Consultas agendadas")
                                         .font(.subheadline)
                                         .foregroundColor(.black)
                                 }
-                                .padding()
+                                .padding(10)
+                                .padding(.vertical,15)
+
                                 .frame(width: geometry.size.width / 3 - 10)
                                 .background(Color.gray.opacity(0.2))
                                 .cornerRadius(10)
@@ -68,19 +63,17 @@ struct InformacoesGeraisConsultaAgendada: View {
                             
                             NavigationLink(destination: HistoricoConsultasView()) {
                                 VStack {
-                                    ZStack {
-                                        Circle()
-                                            .fill(Color.cabecalho)
-                                            .frame(width: 55, height: 55)
+                                        
                                         Image(systemName: "doc.text.below.ecg")
                                             .font(.largeTitle)
-                                            .foregroundColor(.white)
-                                    }
+                                            .foregroundColor(Color.cabecalho)
                                     Text("Histórico Consultas")
                                         .font(.subheadline)
                                         .foregroundColor(.black)
                                 }
-                                .padding()
+                                .padding(10)
+                                
+                                .padding(.vertical,10)
                                 .frame(width: geometry.size.width / 3 - 10)
                                 .background(Color.gray.opacity(0.2))
                                 .cornerRadius(10)
@@ -90,6 +83,7 @@ struct InformacoesGeraisConsultaAgendada: View {
                         VStack(alignment: .leading) {
                             Text("Próximos agendamentos")
                                 .font(.headline)
+                                .padding(.leading)
                             
                             NavigationLink(destination:ConsultasAgendadas()){
                                 
@@ -116,26 +110,28 @@ struct InformacoesGeraisConsultaAgendada: View {
                                     
                                 }
                                 .cornerRadius(10)
+                                .padding()
+
                             }
 
                             
                             VStack(alignment: .leading, spacing: 10) {
                                 Text("Campanhas")
                                     .font(.headline)
+                                    .padding(.leading)
                                 
                                 Link(destination: URL(string: "https://www.google.com/?client=safari")!) {
-                                    Image("campanha1")
+                                    Image("campanha2")
                                         .resizable()
+                                        .frame(width: geometry.size.width - 40, height: geometry.size.height - 400)
                                         .aspectRatio(contentMode: .fit)
                                         .cornerRadius(10)
-                                        .frame(width: geometry.size.width - 40)
+                                        .padding(.horizontal)
                                 }
                             }
-                        }
-                        .padding(.leading)
-                        
+                        }                        
                     }
-                    .padding()
+                    .padding(.leading)
                     .frame(width: geometry.size.width)
                 }
             }
